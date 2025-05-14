@@ -1,4 +1,4 @@
-// Animate skill bars on scroll
+
 window.addEventListener('scroll', () => {
     document.querySelectorAll('.progress-bar').forEach(bar => {
       const barTop = bar.getBoundingClientRect().top;
@@ -9,7 +9,6 @@ window.addEventListener('scroll', () => {
     });
   });
   
-  // Scroll to top button
   const scrollBtn = document.getElementById("scrollTopBtn");
   
   window.onscroll = function () {
@@ -24,7 +23,6 @@ window.addEventListener('scroll', () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
   
-  // Optional: Simple form validation
   document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
     alert("Thanks for reaching out!");
